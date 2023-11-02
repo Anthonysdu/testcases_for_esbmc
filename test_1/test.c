@@ -24,8 +24,7 @@ int main() {
     complexArray[i].inner.innerValue = rand() % 50;
     strcpy(complexArray[i].inner.innerString, "Hello");
   }
-  
-  // 使用memcpy复制数据
+
   struct ComplexStruct copiedArray[arraySize];
   for (int i = 0; i < arraySize; i++) {
     memcpy(&copiedArray[i], &complexArray[i], sizeof(struct ComplexStruct));
