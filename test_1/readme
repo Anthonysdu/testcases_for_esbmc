@@ -1,18 +1,18 @@
 esbmc test.c --no-pointer-check --no-bounds-check --no-div-by-zero-check --unwind 11
-1 violation in 2.6s
+1 violation in 2.7s
 
 
 esbmc test.c --no-pointer-check --no-bounds-check --no-div-by-zero-check --unwind 11 --multi-property
-4 violations in 65.5s
+4 violations in 66.2s
 
 
 esbmc test.c --no-pointer-check --no-bounds-check --no-div-by-zero-check --k-induction
-1 violation in 30.4s
+1 violation in 31.1s
 
 
 esbmc test.c --no-pointer-check --no-bounds-check --no-div-by-zero-check --k-induction --multi-property
-4 violations in 88.4s
+4 violations in 89.8s
 
 
 cbmc test.c
-4 violations in 0.8s
+4 violations in 0.9s
